@@ -1,0 +1,195 @@
+/* ==========================================================
+   RESET Y CONFIGURACIÓN TIPOGRÁFICA GLOBAL
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Base común: 1rem = 16px */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #120021;
+    color: #F2F2F2;
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;       /* 16px */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Escala unificada para encabezados */
+h1, h2, h3, h4 {
+    color: #F2F2F2;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h1 { font-size: 2.5rem; }  /* 40px */
+h2 { font-size: 2rem; }    /* 32px */
+h3 { font-size: 1.5rem; }  /* 24px */
+h4 { font-size: 1.25rem; } /* 20px */
+
+p, li {
+    font-size: 1rem;       /* 16px exactos en todo el sitio */
+    line-height: 1.7;
+    color: #F2F2F2;
+}
+
+/* ==========================================================
+   MENÚ FLOTANTE
+   ========================================================== */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #120021;
+    padding: 0 40px;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 1rem;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav .menu li a:hover,
+.menu li.active a {
+    color: #00E5FF;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* ==========================================================
+   BANNER
+   ========================================================== */
+
+.banner {
+    background-image: url("imagenes/img_1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    text-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
+    transition: background-image 0.3s ease;
+}
+
+.banner:hover {
+    background-image: url("imagenes/img_2.jpeg");
+}
+
+.banner h1 {
+    font-size: 3rem; /* 48px */
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.25rem; /* 20px */
+}
+
+/* ==========================================================
+   SECCIÓN PERFIL / CONTENIDO
+   ========================================================== */
+
+.contenido {
+    background-color: #120021;
+    padding: 60px 40px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.perfil-texto {
+    width: 65%;
+}
+
+.imagen img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #00E5FF;
+}
+
+/* ==========================================================
+   SECCIÓN HOBBIES
+   ========================================================== */
+
+.contenido-hobbies {
+    background-color: #120021;
+    padding: 60px 40px;
+}
+
+.contenido-hobbies h2 {
+    margin-bottom: 25px;
+}
+
+.hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* ==========================================================
+   SECCIÓN CONOCIMIENTOS
+   ========================================================== */
+
+.seccion-conocimientos {
+    margin-top: 35px;
+    padding: 24px;
+    border-left: 3px solid #00E5FF;
+    background-color: #1D0A30;
+    border-radius: 8px;
+}
+
+.seccion-conocimientos h4 {
+    color: #00E5FF;
+    margin-bottom: 12px;
+}
+
+.seccion-conocimientos ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
